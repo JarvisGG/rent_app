@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_sfd_cate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_border"
+            android:src="@drawable/imagedoc" />
+
+        <ImageView
+            android:id="@+id/iv_sfd_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download" />
+
+        <TextView
+            android:id="@+id/iv_sfd_folder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_sfd_cate"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="文件名" />
+
+        <TextView
+            android:id="@+id/iv_sfd_folder_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_sfd_folder_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/space_border"
+            android:text="大小" />
+    </RelativeLayout>
+
+</LinearLayout>

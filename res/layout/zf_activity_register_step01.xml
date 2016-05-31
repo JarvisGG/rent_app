@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/zf_menu_titlebar" />
+    
+    <LinearLayout 
+        android:paddingTop="15dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@color/hui">
+    	
+		<LinearLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:background="@color/white" 
+		    android:paddingLeft="15dp"
+		    android:orientation="vertical">
+		    
+		    <LinearLayout
+		        android:id="@+id/identity_landlord"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal"
+	            android:padding="@dimen/pcenter_margin_01" >
+	
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@null"
+	                android:src="@drawable/identity_1" />
+	
+	            <TextView
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/person_margin_left"
+	                android:layout_weight="1"
+	                android:text="我是房东"
+	                android:textColor="@color/pcenter_text_01"
+	                android:textSize="@dimen/pcenter_text_01" />
+	            
+	            <ImageView
+		            android:layout_width="7dp"
+		            android:layout_height="15dp"
+		            android:layout_marginLeft="15dp"
+		            android:src="@drawable/icon_arrow_2" />
+	            
+            </LinearLayout>
+
+            <include layout="@layout/hc_line_horizontal" />
+                
+            <LinearLayout
+                android:id="@+id/identity_agent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal"
+	            android:padding="@dimen/pcenter_margin_01" >
+	
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@null"
+	                android:src="@drawable/identity_2" />
+	
+	            <TextView
+	                android:id="@+id/tv_mcenter_info"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/person_margin_left"
+	                android:layout_weight="1"
+	                android:text="我是经纪人"
+	                android:textColor="@color/pcenter_text_01"
+	                android:textSize="@dimen/pcenter_text_01" />
+	            
+	            <ImageView
+		            android:layout_width="7dp"
+		            android:layout_height="15dp"
+		            android:layout_marginLeft="15dp"
+		            android:src="@drawable/icon_arrow_2" />
+	            
+            </LinearLayout>   
+            
+            <include layout="@layout/hc_line_horizontal" />
+                
+            <LinearLayout
+                android:id="@+id/identity_tenant"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal"
+	            android:padding="@dimen/pcenter_margin_01" >
+	
+	            <ImageView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@null"
+	                android:src="@drawable/identity_3" />
+	
+	            <TextView
+	                android:id="@+id/tv_mcenter_info"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/person_margin_left"
+	                android:layout_weight="1"
+	                android:text="我是租客"
+	                android:textColor="@color/pcenter_text_01"
+	                android:textSize="@dimen/pcenter_text_01" />
+	            
+	            <ImageView
+		            android:layout_width="7dp"
+		            android:layout_height="15dp"
+		            android:layout_marginLeft="15dp"
+		            android:src="@drawable/icon_arrow_2" />
+	            
+            </LinearLayout>   
+                
+                
+		</LinearLayout>
+    	
+    </LinearLayout>
+
+</LinearLayout>

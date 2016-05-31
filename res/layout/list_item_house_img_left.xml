@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_margin="@dimen/medium_margin"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/rotation_default" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pic"
+        android:layout_toRightOf="@id/pic"
+        android:textSize="@dimen/medium_textsize" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/pic"
+        android:textSize="@dimen/small_textsize" />
+
+    <TextView
+        android:id="@+id/subtitle_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle"
+        android:layout_toRightOf="@id/pic"
+        android:textSize="@dimen/small_textsize"
+        android:visibility="invisible" />
+    
+    <TextView 
+        android:id="@+id/commission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle"
+        android:layout_toRightOf="@id/pic"
+        android:textSize="@dimen/small_textsize" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic"
+        android:layout_toRightOf="@id/pic"
+        android:textSize="@dimen/small_textsize" />
+
+    <ImageView
+        android:id="@+id/collect_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="@drawable/btn_bg_white"
+        android:src="@drawable/icon_6" />
+
+    <TextView
+        android:id="@+id/rent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:background="@drawable/btn_rounded_white"
+        android:padding="@dimen/small_margin"
+        android:text="我要租"
+        android:textColor="@color/theme_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/pic"
+        android:background="@color/line" />
+
+</RelativeLayout>

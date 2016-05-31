@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/small_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/id_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/audit_time_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/reasons_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/orig_department_id_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/right_blue3"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/original_post_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/right_blue3"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/original_post_level_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/right_blue3"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/expected_department_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/right_yellow"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/expected_post_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/right_yellow"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+    <TextView
+        android:id="@+id/expected_post_level_transfer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/right_yellow"
+        android:gravity="center"
+        android:textColor="@color/gray4" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray2" />
+
+</LinearLayout>

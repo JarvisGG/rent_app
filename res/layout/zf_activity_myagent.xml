@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/zf_menu_titlebar" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/hui"/>
+    <include layout="@layout/line_horizontal" />
+    
+    <LinearLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="@color/white"
+	     android:paddingLeft="20dp" >
+	
+	     <LinearLayout
+	         android:id="@+id/agent_name"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:paddingRight="@dimen/pcenter_margin_01"
+	         android:paddingTop="@dimen/pcenter_margin_01"
+	         android:paddingBottom="@dimen/pcenter_margin_01" >
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1"
+	             android:layout_gravity="left"
+	             android:text="姓名"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	         
+	         <TextView
+	             android:id="@+id/tv_agent_name"
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1"
+	             android:layout_gravity="left"
+	             android:text=""
+	             android:gravity="right"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	         
+	     </LinearLayout>
+	     
+	     <include layout="@layout/hc_line_horizontal" />
+	     
+	    <LinearLayout
+	         android:id="@+id/agent_num"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:paddingRight="@dimen/pcenter_margin_01"
+	         android:paddingTop="@dimen/pcenter_margin_01"
+	         android:paddingBottom="@dimen/pcenter_margin_01" >
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1"
+	             android:layout_gravity="left"
+	             android:text="编号"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	         
+	         <TextView
+	             android:id="@+id/tv_agent_num"
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1"
+	             android:layout_gravity="left"
+	             android:text=""
+	             android:gravity="right"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	         
+	     </LinearLayout>
+	     
+	     <include layout="@layout/hc_line_horizontal" />
+	     
+	     <LinearLayout
+	         android:id="@+id/agent_mobile"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:paddingRight="@dimen/pcenter_margin_01"
+	         android:paddingTop="@dimen/pcenter_margin_01"
+	         android:paddingBottom="@dimen/pcenter_margin_01" >
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1"
+	             android:layout_gravity="left"
+	             android:text="电话"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	         
+	         <TextView
+	             android:id="@+id/tv_agent_mobile"
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1"
+	             android:layout_gravity="left"
+	             android:text=""
+	             android:gravity="right"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	         
+	     </LinearLayout>
+	     
+	</LinearLayout>
+	     
+	
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        
+        <Button
+            android:id="@+id/next_btu"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/btn_hl"
+	        android:gravity="center"
+	        android:text="更换经纪人"
+	        android:clickable="false"
+	        android:textSize="@dimen/pcenter_text_01"
+	        android:textColor="@color/white" />
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

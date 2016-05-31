@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/list_item_title_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding" >
+
+        <com.hc.core.view.CountDownTextView
+            android:id="@+id/timedowntextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/list_item_text_size" />
+
+        <Button
+            android:id="@+id/jion"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/vote_height"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_back"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:text="@string/promptly_vote"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/list_item_title_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3" >
+
+    <include
+        android:id="@+id/index_top_layout"
+        layout="@layout/hc_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#C6C6C6" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cb_selectall"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:button="@drawable/cart_checkbox_selector" />
+
+            <CheckBox
+                android:id="@+id/cb_select_all_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/cart_checkbox_selector"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="合计:"
+                android:textColor="#585656" />
+
+            <TextView
+                android:id="@+id/tv_totals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.0"
+                android:textColor="@color/theme_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="运费总积分:"
+                android:textColor="#585656" />
+
+            <TextView
+                android:id="@+id/tv_total_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/theme_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit_or_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:text="提交"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_cart_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@+id/index_top_layout"
+        android:layout_marginTop="10dp"
+        android:choiceMode="multipleChoice"
+        android:descendantFocusability="beforeDescendants"
+        android:divider="#F3F3F3"
+        android:dividerHeight="8dp" >
+    </ListView>
+
+</RelativeLayout>

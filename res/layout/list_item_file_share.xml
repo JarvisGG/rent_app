@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_file_share_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_border" >
+
+        <TextView
+            android:id="@+id/tv_folder_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知有新的文件需要审"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_folder_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="通知有新的文件需要审" />
+
+        <TextView
+            android:id="@+id/tv_folder_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_folder_title"
+            android:layout_marginTop="10dp"
+            android:text="通知有新的文件需要审这种搭配下的批量文件上传会失败，最终服务端只会接受到一个文件，即只会接受到第一个文件" />
+    </RelativeLayout>
+
+</LinearLayout>

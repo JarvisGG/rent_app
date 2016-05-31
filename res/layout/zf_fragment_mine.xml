@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/milkwhite" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="@dimen/person_head_height_all"
+            	android:orientation="vertical"
+            	android:background="@drawable/background">
+            
+	            <LinearLayout 
+	                android:paddingTop="@dimen/top_back_padding_Left_right"
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/person_center_head_margin_top"
+	                android:orientation="vertical">
+	                
+	                <ImageView
+	                    android:id="@+id/ll_mcenter_setting"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:layout_gravity="right"
+	                    android:src="@drawable/setting" />
+
+	            </LinearLayout>
+	            
+	            <RelativeLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="@dimen/person_head_height"
+	                android:layout_gravity="center"
+	                android:background="@drawable/background">
+	            
+		            <com.hc.core.view.CircularImage 
+		                android:id="@+id/iv_center_head"
+		                android:layout_width="@dimen/person_center_head_height_width"
+		                android:layout_height="@dimen/person_center_head_height_width"
+		                android:layout_centerHorizontal="true"
+		                android:layout_marginTop="@dimen/person_margin_bottom_right"
+		                android:src="@drawable/portrait_2"
+		                android:background="@drawable/portrait_1"
+		                android:visibility="visible"/>
+	            
+		            <Button
+	                    android:id="@+id/btn_sign"
+	                    android:layout_width="@dimen/person_sign_width"
+	                    android:layout_height="@dimen/person_sign_height"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_alignParentBottom="true"
+	                    android:layout_marginBottom="@dimen/person_margin_bottom_right"
+	                    android:background="@drawable/zf_login_btn" 
+	                    android:text="@string/login_btn"
+	                    android:textColor="@color/white"
+	                    android:visibility="visible"/>
+		            
+		            <TextView
+                        android:id="@+id/tv_sign_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/pcenter_text_01"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="@dimen/person_margin_bottom_right" 
+                        android:visibility="gone"/>
+		            
+	            </RelativeLayout>
+            
+            </LinearLayout>
+            
+            <include layout="@layout/hc_line_horizontal" />
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"> 
+                
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_info"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_1" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_info"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="个人信息"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_certified"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+					
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_2" />
+		
+		                <TextView
+	                        android:id="@+id/tv_mcenter_certified"
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="@dimen/person_margin_left"
+	                        android:layout_weight="1"
+	                        android:text="实名认证"
+	                        android:textColor="@color/pcenter_text_01"
+	                        android:textSize="@dimen/pcenter_text_01" />
+	                    
+	                    <TextView 
+	                        android:id="@+id/tv_mcenter_certified_status"
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="@dimen/person_margin_left"
+	                        android:layout_weight="1"
+	                        android:gravity="right"
+	                        android:textColor="@color/gray5"
+	                        android:textSize="@dimen/medium_textsize" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_entrust"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_3" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_entrust"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="我的委托"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_rental"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_4" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_rental"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="我的租房"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+		        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_repay"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_5" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_repay"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="付款记录"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_collect"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_6" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_collect"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="我的收藏"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_footprints"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal"
+	                    android:padding="@dimen/pcenter_margin_01" >
+	
+	                    <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:contentDescription="@null"
+	                        android:src="@drawable/icon_7" />
+	
+	                    <TextView
+	                        android:id="@+id/tv_mcenter_footprints"
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="@dimen/person_margin_left"
+	                        android:layout_weight="1"
+	                        android:text="我的足迹"
+	                        android:textColor="@color/pcenter_text_01"
+	                        android:textSize="@dimen/pcenter_text_01" />
+	                </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_agent"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal"
+	                    android:padding="@dimen/pcenter_margin_01" >
+	
+	                    <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:contentDescription="@null"
+	                        android:src="@drawable/icon_7" />
+	
+	                    <TextView
+	                        android:id="@+id/tv_mcenter_agent"
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="@dimen/person_margin_left"
+	                        android:layout_weight="1"
+	                        android:text="我的经纪人"
+	                        android:textColor="@color/pcenter_text_01"
+	                        android:textSize="@dimen/pcenter_text_01" />
+	                </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_myroom"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal"
+	                    android:padding="@dimen/pcenter_margin_01" >
+	
+	                    <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:contentDescription="@null"
+	                        android:src="@drawable/icon_7" />
+	
+	                    <TextView
+	                        android:id="@+id/tv_mcenter_myroom"
+	                        android:layout_width="0dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="@dimen/person_margin_left"
+	                        android:layout_weight="1"
+	                        android:text="我的房源"
+	                        android:textColor="@color/pcenter_text_01"
+	                        android:textSize="@dimen/pcenter_text_01" />
+	                </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_num"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_2" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_num"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="我的编号"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_commission"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_5" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_commission"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="我的佣金"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_tenant"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_11" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_tenant"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="租客信息"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_room"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_10" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_room"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="发布房源"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_message"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+	
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_8" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_message"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="消息中心"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+                <LinearLayout 
+                    android:id="@+id/ll_mcenter_changepsd"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+	
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_9" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_changepsd"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="修改密码"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout>
+				
+               <!--  <LinearLayout 
+                    android:id="@+id/ll_mcenter_certify"
+                    android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+				
+					<LinearLayout
+	
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal"
+		                android:padding="@dimen/pcenter_margin_01" >
+			            
+					    <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:contentDescription="@null"
+		                    android:src="@drawable/icon_9" />
+		
+		                <TextView
+		                    android:id="@+id/tv_mcenter_certify"
+		                    android:layout_width="0dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/person_margin_left"
+		                    android:layout_weight="1"
+		                    android:text="上传房产证"
+		                    android:textColor="@color/pcenter_text_01"
+		                    android:textSize="@dimen/pcenter_text_01" />
+			            
+			        </LinearLayout>
+			        
+					<include layout="@layout/hc_line_horizontal" />
+				</LinearLayout> -->
+				
+
+			</LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

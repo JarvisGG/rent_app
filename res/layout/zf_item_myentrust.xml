@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:padding="@dimen/padding">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_height="@dimen/small1_height" >
+        
+        <TextView 
+            android:id="@+id/tv_title" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/medium_textsize"
+            android:maxLines="1"
+            android:text="Title"
+            android:paddingTop="2dp"
+            android:layout_alignParentTop="true"  />
+        
+        <TextView 
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_textsize"
+            android:textColor="@color/gray5"
+            android:maxLines="1"
+            android:text="280m 1.9元/m天"
+            android:layout_below="@id/tv_title"/>
+        
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_textsize"
+            android:maxLines="1"
+            android:text="type"
+            android:paddingBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/gray5"/>
+       
+
+    </RelativeLayout>
+
+</LinearLayout>

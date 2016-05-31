@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/zf_menu_titlebar" />
+	
+	<RelativeLayout 
+        android:paddingTop="15dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/hui">  
+    	
+        
+		<EditText
+	        android:id="@+id/opinion_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:ems="10"
+	        android:gravity="left|top"
+	        android:background="@drawable/bg_edittext"
+	        android:height="128dp"
+	        android:hint="感谢您发表建议，我们会积极参与改进！"
+	        android:inputType="textMultiLine"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp" >
+	
+	        <requestFocus />
+	    </EditText>
+        
+    	
+        <RelativeLayout 
+	        android:id="@+id/login_btu"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/opinion_content"
+	        android:paddingTop="15dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp">
+	        
+	        <Button
+	            android:id="@+id/next_btu"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:background="@drawable/btn_hl"
+		        android:gravity="center"
+		        android:text="提交"
+		        android:textSize="@dimen/pcenter_text_01"
+		        android:textColor="@color/white" />
+	        
+	    </RelativeLayout>	    
+        
+    </RelativeLayout>
+	
+</LinearLayout>

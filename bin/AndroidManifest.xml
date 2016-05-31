@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hc.xiaobairent"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+    <!-- JPush Required -->
+    <!-- JPush Required 此处需要更改包名 -->
+    <permission
+        android:name="com.hc.xiaobairent.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- JPush Required 此处需要更改包名 -->
+    <uses-permission android:name="com.hc.xiaobairent.permission.JPUSH_MESSAGE" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- JPush Required -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- renren sso Permission for Unit Test -->
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- Required SDK 核心功能 -->
+        <!-- option since 2.0.5 可配置PushService，DaemonService,PushReceiver,AlarmReceiver的android:process参数 将JPush相关组件设置为一个独立进程 -->
+        <!-- 如：android:process=":remote" -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.hc.xiaobairent" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.hc.xiaobairent" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <!-- Required -->
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="ad2ffe2961ee0b31913207a8" />
+        <!-- TODO 此处缺jpushkey -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hc.xiaobairent.activity.ZfAreaSelectedActivity" />
+        <activity
+            android:name="com.hc.xiaobairent.activity.ZfChangePsdActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyEntrustActivity" />
+        <activity
+            android:name="com.hc.xiaobairent.activity.ZfCertifiedActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfRegister04Activity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfRegister03Activity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfRegister02Activity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfRegister01Activity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyNumActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfPriceSelectActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfSizeSelectActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyMessageDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfForgetPsdStep02" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfForgetPsdStep01" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyRepayActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfLoginActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfForRenewDateActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyRoomActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyRoomDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyRoomContract" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfForRentActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfForRenewActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyRentalActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyMessageActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfChangeInfoActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfPersonInfoActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfDeputeDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfEntrustDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfDeputeLookRoomActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyCollectActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfDeputeFindRoomActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfAboutUsActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfFeedBackActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfMyAgentActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ZfHouseListActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.CertifyActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.FootprintsActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.HouseDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.NewEstateActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.AlbumActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.AlbumActivity1" />
+        <activity android:name="com.hc.xiaobairent.activity.ShowAllPhoto" />
+        <activity android:name="com.hc.xiaobairent.activity.GalleryActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.GalleryActivity1" />
+        <activity android:name="com.hc.xiaobairent.activity.ImageFile" />
+        <activity android:name="com.hc.xiaobairent.activity.MyIncomeActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.IncomeDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.SearchActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.RentManagmentActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.RentManagmentDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ContractDetailActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ChoosePeriodActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.InputOneDataActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ChooseCircleActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.NewHouseActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.TenantInformationActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ChooseDepositPeriodActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ImageDetailsActivity" />
+        <activity
+            android:name="com.hc.xiaobairent.activity.PostHouseActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.hc.xiaobairent.activity.ChooseCityActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.MoreActivity" />
+        <activity android:name="com.hc.xiaobairent.activity.ChooseTypeActivity" />
+        <activity
+            android:name="com.hc.xiaobairent.activity.RentActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.hc.xiaobairent.activity.SettingsActivity" />
+        <activity android:name="com.hc.core.vote.VoteList" />
+        <activity android:name="com.hc.core.upload.upload" />
+        <activity android:name="com.hc.core.vote.VoteDetails" />
+        <activity android:name="com.hc.core.utils.CropImageActivity" />
+        <activity android:name="com.hc.core.anji.MuPDFActivity" />
+        <activity android:name="com.hc.core.anji.ViewFile" />
+        <activity android:name="com.hc.core.anji.YourPdfViewerActivity" />
+        <activity android:name="com.hc.core.pdf.utils.CutActivity" />
+        <activity android:name="com.hc.core.pdf.utils.OutlineActivity" />
+        <activity
+            android:name="com.hc.core.login.ForgetPassword"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.hc.core.anji.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- wechat callback -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- tencent -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+        <uses-library android:name="android.test.runner" />
+
+        <!-- ************************* related to Share END **************************** -->
+        <!-- umengAppKey，replace to yours -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5732c5b0e0f55a1c9d001d98" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+    </application>
+
+</manifest>

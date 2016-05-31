@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_margin"
+        android:background="@color/graybackground" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_margin" >
+
+        <TextView
+            android:id="@+id/park_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/small_margin" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/small_margin"
+            android:textColor="@color/grayfont" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/small_margin"
+            android:text="成交佣金"
+            android:textColor="@color/grayfont" />
+
+        <TextView
+            android:id="@+id/income_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/small_margin"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/large_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/small_margin"
+            android:text="元" />
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal" />
+
+</LinearLayout>

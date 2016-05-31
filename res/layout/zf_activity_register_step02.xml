@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/zf_menu_titlebar" />
+    
+    <RelativeLayout 
+        android:paddingTop="15dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/hui">  
+    	
+        <LinearLayout 
+            android:id="@+id/input_username"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:background="@color/white"
+    		android:paddingLeft="10dp">
+    		
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="@dimen/menu_input_height"
+    			android:text="手 机 号"
+    			android:textColor="@color/pcenter_text_01"
+    			android:textSize="@dimen/commonly28"/>
+            
+		    <com.hc.xiaobairent.view.ClearEditText
+		        android:id="@+id/edt_userphone"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:paddingRight="10dp"
+		        android:layout_height="@dimen/menu_input_height"
+		        android:background="@color/white"
+		        android:gravity="center_vertical"
+		        android:hint="请输入手机号"
+		        android:numeric="integer"
+		        android:inputType="phone"
+		        android:paddingLeft="20dp"
+		        android:textSize="@dimen/commonly28" />
+		    
+		    <Button 
+		        android:id="@+id/get_verifycode"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="获取验证码"
+		        android:textColor="#737373"
+		        android:layout_marginRight="10dp"
+		        android:background="@drawable/button_verifycode"
+		        android:textSize="@dimen/commonly28" />
+		    
+		    
+		    
+	    </LinearLayout>
+		
+        <LinearLayout
+		    android:id="@+id/line"
+		    android:layout_width="match_parent"
+		    android:layout_height="2dp"
+		    android:layout_below="@id/input_username"
+		    android:background="@color/white"
+		    android:orientation="vertical" >
+		    
+		    <View
+			    android:layout_width="match_parent"
+			    android:layout_marginLeft="10dp" 
+			    android:layout_height="1px"
+			    android:background="#ffbfbfbf"/>
+
+		</LinearLayout>
+	    
+	    
+	    <LinearLayout 
+	        android:id="@+id/input_userpsd"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_below="@id/line"
+    		android:background="@color/white"
+    		android:paddingLeft="10dp">
+    		
+    		
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="@dimen/menu_input_height"
+    			android:text="验 证 码"
+    			android:textColor="@color/pcenter_text_01"
+    			
+    			android:textSize="@dimen/commonly28"/>
+	    
+		    <com.hc.xiaobairent.view.ClearEditText
+		        android:id="@+id/edt_vercode"
+		        android:layout_width="match_parent"
+		        android:paddingRight="10dp"
+		        android:layout_height="@dimen/menu_input_height"
+		        android:background="@color/white"
+		        android:gravity="center_vertical"
+		        android:numeric="integer"
+		        android:hint="请输入验证码"
+		        android:paddingLeft="20dp"
+		        android:textSize="@dimen/commonly28" />
+		 
+		</LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/login_btu_r"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/input_userpsd"
+	        android:paddingTop="25dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp">
+	        
+	        <Button
+	            android:id="@+id/next_btu"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:background="@drawable/btn_d"
+		        android:gravity="center"
+		        android:text="下一步"
+		        android:clickable="false"
+		        android:textSize="@dimen/pcenter_text_01"
+		        android:textColor="@color/white" />
+	        
+	    </RelativeLayout>	    
+	  
+    </RelativeLayout>
+    
+
+</LinearLayout>

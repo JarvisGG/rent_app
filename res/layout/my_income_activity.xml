@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/back_title_right_white" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/chart_ll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_margin"
+        android:background="@color/graybackground" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_margin" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                android:text="总收入" />
+
+            <TextView
+                android:id="@+id/total_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/medium_margin"
+                android:text="元" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_toLeftOf="@id/total_unit"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/large_textsize" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_vertical" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                android:text="当月收入" />
+
+            <TextView
+                android:id="@+id/month_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/medium_margin"
+                android:text="元" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_toLeftOf="@id/month_unit"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/large_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_margin"
+        android:background="@color/graybackground" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/income_detail_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height"
+        android:background="@drawable/btn_bg_white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="@dimen/medium_margin"
+            android:src="@drawable/headline" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/small_margin"
+            android:text="查看收入明细" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingRight="@dimen/medium_margin"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/graybackground" />
+
+</LinearLayout>

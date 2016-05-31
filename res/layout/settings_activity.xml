@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/back_title_right" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/medium_margin"
+        android:text="普通用户" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <TextView
+        android:id="@+id/broker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/medium_margin"
+        android:text="经纪人" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/medium_margin"
+        android:text="房东" />
+
+    <include layout="@layout/line_horizontal" />
+
+</LinearLayout>

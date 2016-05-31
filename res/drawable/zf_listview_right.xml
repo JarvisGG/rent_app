@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:drawable="@drawable/zf_listview_right_btn" android:state_pressed="true" android:color="@color/rose"/> 
+	 
+	<item android:drawable="@drawable/zf_listview_right_btn_unclick"/>  
+    
+
+</selector>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_job_change_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin" >
+
+    <TextView
+        android:id="@+id/title_lv_job_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/position_lv_job_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:textColor="@color/gray5"
+            android:textSize="@dimen/small_textsize" />
+
+        <TextView
+            android:id="@+id/date_lv_job_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:textColor="@color/gray5"
+            android:textSize="@dimen/small_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reason_lv_job_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textSize="@dimen/medium_textsize" />
+
+</LinearLayout>

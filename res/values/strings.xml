@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小白租</string>
+    <string name="tab_1">首页</string>
+    <string name="tab_2">分类</string>
+    <string name="tab_3">购物车</string>
+    <string name="tab_4">个人中心</string>
+    <string name="search_commoiety">搜索您喜欢的商品</string>
+    <string name="tvHome">首页</string>
+    <string name="tvCategory">分类</string>
+    <string name="tvCart">购物车</string>
+    <string name="tvMine">个人中心</string>
+    <string name="goods_sort">排序</string>
+    <string name="arrows">箭头</string>
+    <string name="goods_brands">品牌</string>
+    <string name="goods_place">销售地</string>
+    <string name="texture">材质</string>
+    <string name="my_indent">我的订单</string>
+    <string name="my_indent_manager">订单管理</string>
+    <string name="my_favorites">我的收藏</string>
+    <string name="my_shop_list">商品列表</string>
+    <string name="material_goods">材料商品</string>
+    <string name="my_goods">我的商品</string>
+    <string name="shop_manager">商品管理</string>
+    <string name="factory_order">厂家订单</string>
+    <string name="my_balance">我的余额</string>
+    <string name="my_point">我的积分</string>
+    <string name="my_remit">我的汇款统计</string>
+    <string name="my_message">我的消息通知</string>
+    <string name="my_child_account">我的子账号</string>
+    <string name="my_logistics">我的地接物流</string>
+    <string name="my_logistics1">我的本地物流</string>
+    <string name="my_place">我的产地</string>
+    <string name="my_take_note">我的接货单</string>
+    <string name="my_turnout_bill">我的出车单</string>
+    <string name="back">后退键</string>
+    <string name="edit">编辑</string>
+    <string name="promptly_vote">立即投票</string>
+
+    <!-- 修改密码 -->
+    <string name="old_pas">请填写原密码</string>
+    <string name="new_pas">请填写新密码</string>
+    <string name="ok_pas">确认密码</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="searching_">Searching...</string>
+    <string name="open_failed">Unable to open document</string>
+    <string name="enter_password">Enter Password</string>
+    
+    <!-- 个人中心 -->
+    <string name="login_btn">点击登录</string>
+    <string name="user_name">姓\u0020\u0020\u0020\u0020名</string>
+    <string name="user_phone">手\u0020\u0020\u0020\u0020机</string>
+    <string name="user_address">地\u0020\u0020\u0020\u0020区</string>
+    <string name="user_area">面\u0020\u0020\u0020\u0020积</string>
+    <string name="user_rent">租\u0020\u0020\u0020\u0020金</string>
+    <string name="user_remark">备\u0020\u0020\u0020\u0020注</string>
+
+    <!-- 个人信息 -->   
+    <string name="username">用\u0020户\u0020名</string>
+   	<string name="usericon">头\u0020\u0020\u0020\u0020\u0020\u0020像</string>
+   	<string name="usersex">性\u0020\u0020\u0020\u0020\u0020\u0020别</string>
+   	<string name="useraddress">地\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020址</string>
+   	<string name="userwechat">微\u0020\u0020\u0020\u0020\u0020\u0020信</string>
+   	<string name="userphone">手\u0020机\u0020号</string>
+   	<string name="userqq">Q\u0020\u0020\u0020\u0020\u0020\u0020\u0020Q</string>
+   	<string name="useremail">电子邮箱</string>
+   	<string name="userindustry">行\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020业</string>
+   	<string name="userfavor">个人兴趣</string>
+   	
+   	<!-- 修改密码 -->
+   	<string name="olderpsd">原\u0020\u0020密\u0020\u0020码</string>
+   	<string name="newpsd">新\u0020\u0020密\u0020\u0020码</string>
+   	<string name="repsd">确认密码</string>
+   	<string name="psd">密\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020码</string>
+   	
+   	
+   	<!-- 退租 -->
+  	<string name="rent_tip">提交退租申请后，经纪人将于7日内确认您的退租申请，确认退租申请后，你需要在租房日期到期前搬离此房源，否则将视为续租，如需续租，请提交续租申请。</string>
+
+  	<!-- 登录 -->
+  	<string name="useraccount">账\u0020\u0020号</string>
+  	<string name="userpsd">密\u0020\u0020码</string>
+  	
+  	<!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string> 
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+</resources>

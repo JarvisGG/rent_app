@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/zf_menu_titlebar"/>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/depute_room_item"
+	    android:background="@color/white"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/medium_margin"
+	    android:paddingRight="@dimen/medium_margin"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/commonly28"
+	        android:text="@string/user_name"/>
+	    
+	    <ImageView 
+	        android:layout_width="@dimen/must_fillin_flag"
+	        android:layout_height="@dimen/must_fillin_flag"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginLeft="6dp"
+	        android:src="@drawable/flag"/>
+	    
+	    <EditText 
+	        android:id="@+id/username"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:textSize="@dimen/commonly28"
+			android:layout_marginLeft="@dimen/large_margin"
+	        android:hint=""/>
+	    
+	</LinearLayout>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/depute_room_item"
+	    android:background="@color/white"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/medium_margin"
+	    android:paddingRight="@dimen/medium_margin"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/commonly28"
+	        android:text="@string/user_phone"/>
+	    
+	    <ImageView 
+	        android:layout_width="@dimen/must_fillin_flag"
+	        android:layout_height="@dimen/must_fillin_flag"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginLeft="6dp"
+	        android:src="@drawable/flag"/>
+	    
+	    <EditText
+	        android:id="@+id/userphone" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:textSize="@dimen/commonly28"
+			android:numeric="integer"
+			android:layout_marginLeft="@dimen/large_margin"
+	        android:hint=""/>
+	    
+	</LinearLayout>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+	
+	<LinearLayout 
+	    android:id="@+id/user_address"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/depute_room_item"
+	    android:background="@color/white"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/medium_margin"
+	    android:paddingRight="@dimen/medium_margin"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/commonly28"
+	        android:singleLine="true"
+	        android:text="@string/user_address"/>
+	    
+	    <ImageView 
+	        android:layout_width="@dimen/must_fillin_flag"
+	        android:layout_height="@dimen/must_fillin_flag"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginLeft="6dp"
+	        android:src="@drawable/flag"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_address" 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="@dimen/large_margin"
+	        android:textSize="@dimen/commonly28"
+	        android:layout_height="wrap_content"/>
+	    
+	    <ImageView
+            android:layout_width="7dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_arrow_2" />
+	    
+	</LinearLayout>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+	
+	<LinearLayout 
+	    android:id="@+id/user_area"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/depute_room_item"
+	    android:background="@color/white"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/medium_margin"
+	    android:paddingRight="@dimen/medium_margin"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/commonly28"
+	        android:text="@string/user_area"/>
+	    
+	    <ImageView 
+	        android:layout_width="@dimen/must_fillin_flag"
+	        android:layout_height="@dimen/must_fillin_flag"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginLeft="6dp"
+	        android:src="@drawable/flag"
+	        android:visibility="invisible"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_area"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="@dimen/large_margin"
+			android:textSize="@dimen/commonly28"
+	        android:layout_height="wrap_content"/>
+	    
+	    <ImageView
+            android:layout_width="7dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_arrow_2" />
+	    
+	</LinearLayout>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+	
+	<LinearLayout 
+	    android:id="@+id/user_rent"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/depute_room_item"
+	    android:background="@color/white"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/medium_margin"
+	    android:paddingRight="@dimen/medium_margin"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/commonly28"
+	        android:text="@string/user_rent"/>
+	    
+	    <ImageView 
+	        android:layout_width="@dimen/must_fillin_flag"
+	        android:layout_height="@dimen/must_fillin_flag"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginLeft="6dp"
+	        android:src="@drawable/flag"
+	        android:visibility="invisible"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_rent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="@dimen/large_margin"
+	        android:textSize="@dimen/commonly28"
+	        android:layout_height="wrap_content"/>
+	    
+	    <ImageView
+            android:layout_width="7dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_arrow_2" />
+	    
+	</LinearLayout>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/large_height"
+	    android:background="@color/white"
+	    android:orientation="vertical"
+	    android:paddingLeft="@dimen/medium_margin"
+	    android:paddingRight="@dimen/medium_margin"
+	    android:paddingTop="10dp" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/user_remark"
+	        android:textSize="@dimen/commonly28" />
+
+	    <EditText
+	        android:id="@+id/tv_remark"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@color/white"
+	        android:textSize="@dimen/commonly28"
+	        android:ems="10"
+	        android:layout_marginTop="5dp"
+	        android:gravity="left|top"
+	        android:inputType="textMultiLine"
+	        android:maxLines="10" />
+	</LinearLayout>
+	
+	<RelativeLayout 
+	        android:id="@+id/login_btu_r"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="25dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp">
+	        
+	        <Button
+	            android:id="@+id/sub_btn"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:background="@drawable/btn_d"
+		        android:gravity="center"
+		        android:text="提交"
+		        android:textSize="@dimen/pcenter_text_01"
+		        android:textColor="@color/white" />
+	        
+	    </RelativeLayout>
+		
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawablePadding="@dimen/small_margin"
+            android:gravity="center_vertical"
+            android:text="请输入园区名称" />
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/region_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_white"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableRight="@drawable/down_arrow"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/medium_margin"
+            android:singleLine="true"
+            android:text="地区" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/area_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_white"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableRight="@drawable/down_arrow"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/medium_margin"
+            android:singleLine="true"
+            android:text="面积" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/decration_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_white"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableRight="@drawable/down_arrow"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/medium_margin"
+            android:singleLine="true"
+            android:text="装修" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_white"
+            android:drawablePadding="@dimen/small_margin"
+            android:drawableRight="@drawable/down_arrow"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/medium_margin"
+            android:singleLine="true"
+            android:text="价格" />
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.ab.view.pullview.AbPullToRefreshView
+            android:id="@+id/mPullRefreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+        </com.ab.view.pullview.AbPullToRefreshView>
+
+        <LinearLayout
+            android:id="@+id/select_ll"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/first_lv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f2f2f5"
+                android:choiceMode="singleChoice"
+                android:divider="@null" />
+
+            <ListView
+                android:id="@+id/second_lv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f7f7fa"
+                android:choiceMode="singleChoice"
+                android:divider="@null" />
+
+            <ListView
+                android:id="@+id/third_lv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@null" />
+
+            <ListView
+                android:id="@+id/forth_lv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

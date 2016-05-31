@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/zf_menu_titlebar" />
+	
+	<LinearLayout 
+        
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:background="@color/hui">
+    
+	    <LinearLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:background="@color/white" 
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="15dp"
+		    android:paddingRight="15dp"
+		    android:paddingBottom="10dp"
+		    android:gravity="center_vertical"
+		    android:orientation="vertical">
+		    
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/pcenter_text_01"
+	            android:textSize="@dimen/pcenter_text_01"
+	            android:layout_marginTop="@dimen/pcenter_margin_01"
+	            android:layout_marginBottom="@dimen/pcenter_margin_01"
+	            android:text="上传身份证照片"/>
+	        
+	         <include layout="@layout/hc_line_horizontal" />
+	         
+	         
+	         <GridView 
+        		android:id="@+id/gv_gallery1"
+	             android:layout_width="match_parent"
+	             android:layout_height="78dp"
+	             android:layout_marginTop="@dimen/pcenter_margin_01"
+	             android:layout_marginBottom="@dimen/pcenter_margin_01"
+	             android:horizontalSpacing="3dp"
+	             android:numColumns="4"
+	             android:scrollbars="none"
+	             android:verticalSpacing="5dp" >
+    		</GridView>
+    		
+	         <!-- <ImageView 
+	             android:id="@+id/certificate_photo"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="@dimen/pcenter_margin_01"
+	             android:layout_marginBottom="@dimen/pcenter_margin_01"
+	             android:src="@drawable/add_photo" /> -->
+		    
+		</LinearLayout>
+		
+	    <LinearLayout
+	        android:id="@+id/property_pic"
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:background="@color/white" 
+		    android:layout_marginTop="15dp"
+		    android:paddingLeft="15dp"
+		    android:gravity="center_vertical"
+		    android:visibility="gone"
+		    android:orientation="vertical">
+		    
+	        <TextView 
+	            android:id="@+id/property_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/pcenter_text_01"
+	            android:textSize="@dimen/pcenter_text_01"
+	            android:layout_marginTop="@dimen/pcenter_margin_01"
+	            android:layout_marginBottom="@dimen/pcenter_margin_01"
+	            android:text="上传身份证照片"/>
+	        
+	         <include layout="@layout/hc_line_horizontal" />
+	         
+	         <LinearLayout 
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="@dimen/pcenter_margin_01"
+	             android:layout_marginBottom="@dimen/pcenter_margin_01">
+	         
+	         <GridView 
+        		android:id="@+id/gv_gallery2"
+	             android:layout_width="match_parent"
+	             android:layout_height="78dp"
+	             android:layout_marginTop="@dimen/pcenter_margin_01"
+	             android:layout_marginBottom="@dimen/pcenter_margin_01"
+	             android:horizontalSpacing="3dp"
+	             android:numColumns="4"
+	             android:scrollbars="none"
+	             android:verticalSpacing="5dp" >
+    		</GridView>
+	         
+	         </LinearLayout>
+		    
+		</LinearLayout>
+		
+	    <RelativeLayout 
+	        android:id="@+id/login_btu_r"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="25dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp">
+	        
+	        <Button
+	            android:id="@+id/next_btu"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:background="@drawable/btn_hl"
+		        android:gravity="center"
+		        android:text="确认"
+		        android:clickable="false"
+		        android:textSize="@dimen/pcenter_text_01"
+		        android:textColor="@color/white" />
+	        
+	    </RelativeLayout>	 
+    
+    </LinearLayout>
+    
+</LinearLayout>

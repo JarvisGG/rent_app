@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/back_title_right_white" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/sliding_play_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/huge_height" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/park_name_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/large_textsize" />
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_color"
+                    android:textSize="@dimen/medium_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <TextView
+                    android:id="@+id/num_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_gray_color"
+                    android:textSize="@dimen/medium_textsize" />
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/large_textsize" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/address_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/small_height"
+                android:background="@drawable/btn_bg_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_7" />
+
+                <TextView
+                    android:id="@+id/address_detail_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/person_margin_left"
+                    android:layout_weight="1"
+                    android:textColor="@color/pcenter_text_01"
+                    android:textSize="@dimen/pcenter_text_01" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="@color/background_gray" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/house_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/region_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_bg_white"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="center"
+                android:padding="@dimen/medium_margin" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="@color/background_gray" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_margin" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="面积"
+                        android:textSize="@dimen/medium_textsize" />
+
+                    <TextView
+                        android:id="@+id/area_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray_color"
+                        android:textSize="@dimen/medium_textsize" />
+                </LinearLayout>
+
+                <include layout="@layout/line_virtical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="户型"
+                        android:textSize="@dimen/medium_textsize" />
+
+                    <TextView
+                        android:id="@+id/house_type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray_color"
+                        android:textSize="@dimen/medium_textsize" />
+                </LinearLayout>
+
+                <include layout="@layout/line_virtical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物业公司"
+                        android:textSize="@dimen/medium_textsize" />
+
+                    <TextView
+                        android:id="@+id/company_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray_color"
+                        android:textSize="@dimen/medium_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="@color/background_gray" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/medium_margin"
+                android:text="楼宇描述"
+                android:textColor="@color/text_gray_color"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:id="@+id/describe_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingBottom="@dimen/medium_margin"
+                android:paddingLeft="@dimen/medium_margin"
+                android:paddingRight="@dimen/medium_margin"
+                android:textSize="@dimen/medium_textsize" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <TextView
+                android:id="@+id/see_more_describe_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_bg_white"
+                android:drawablePadding="@dimen/small_margin"
+                android:drawableRight="@drawable/down_arrow"
+                android:gravity="center"
+                android:padding="@dimen/medium_margin"
+                android:text="点击查看更多" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin"
+                android:background="@color/background_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

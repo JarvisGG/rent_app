@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 文件审批处理 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="文件审批处理"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:id="@+id/tv_index_document_approval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/bluejiantou"
+                    android:gravity="center"
+                    android:text="更多"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray2" />
+
+            <LinearLayout
+                android:id="@+id/ll_folder_check"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@+id/fl_container11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray2" />
+        </LinearLayout>
+        <!-- 职位变更处理 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="职位变更处理"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:id="@+id/tv_index_job_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/bluejiantou"
+                    android:gravity="center"
+                    android:text="更多"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray2" />
+
+            <LinearLayout
+                android:id="@+id/ll_folder_check2"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@+id/fl_container22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

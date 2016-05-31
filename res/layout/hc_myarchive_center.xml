@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- 我的档案更新 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="我的档案更新"
+            android:textSize="@dimen/index_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:text="姓名"
+                    android:textColor="@color/gray5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/t_realname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title1"
+                    android:layout_marginLeft="@dimen/space_border"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:id="@+id/tv_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t_realname"
+                    android:layout_marginTop="15dp"
+                    android:padding="@dimen/space_border"
+                    android:text="工号"
+                    android:textColor="@color/gray5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/user_sn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title2"
+                    android:layout_marginLeft="@dimen/space_border"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:id="@+id/tv_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_sn"
+                    android:layout_marginTop="15dp"
+                    android:padding="@dimen/space_border"
+                    android:text="备注"
+                    android:textColor="@color/gray5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title3"
+                    android:layout_marginLeft="@dimen/space_border"
+                    android:textSize="@dimen/index_title" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_border"
+                        android:text="学历"
+                        android:textColor="@color/gray5"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_border"
+                        android:textSize="@dimen/index_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="年龄"
+                        android:textColor="@color/gray5"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_border"
+                        android:textSize="@dimen/index_title" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_border"
+                    android:text="所在部门(工段)"
+                    android:textColor="@color/gray5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/department_ids"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_border"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="@dimen/space_border"
+                    android:text="所在编组"
+                    android:textColor="@color/gray5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_border"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="@dimen/space_border"
+                    android:text="岗级"
+                    android:textColor="@color/gray5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_border"
+                    android:textSize="@dimen/index_title" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 个人奖惩 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="个人奖惩"
+            android:textSize="@dimen/index_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_border"
+            android:text="奖惩记录"
+            android:textColor="@color/gray5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:layout_marginTop="25dp"
+            android:text="奖惩时间"
+            android:textColor="@color/gray5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:layout_marginTop="@dimen/space_border"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:layout_marginTop="25dp"
+            android:text="奖惩金额"
+            android:textColor="@color/gray5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:layout_marginTop="@dimen/space_border"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:layout_marginTop="25dp"
+            android:text="备注"
+            android:textColor="@color/gray5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:layout_marginTop="@dimen/space_border"
+            android:textSize="@dimen/index_title" />
+    </LinearLayout>
+    <!-- 绩效 -->
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="420dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_top_title_more"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_height"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/bluejiantou"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="更多"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="@dimen/huge_margin"
+                    android:gravity="center"
+                    android:text="班组月平均"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:id="@+id/Performance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/huge_margin"
+                    android:background="@drawable/imagroundred"
+                    android:gravity="center"
+                    android:textColor="@color/deep_red"
+                    android:textSize="@dimen/huge_textsize"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/line_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="@dimen/huge_margin"
+                    android:gravity="center"
+                    android:text="当月绩效"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:id="@+id/Yfraction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/huge_margin"
+                    android:background="@drawable/imaglongred3"
+                    android:gravity="center"
+                    android:textColor="@color/deep_red"
+                    android:textSize="@dimen/huge_textsize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <include layout="@layout/line_virtical" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/month_everage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="班组排名"
+                    android:textSize="@dimen/index_title" />
+
+                <TextView
+                    android:id="@+id/rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/imagred"
+                    android:gravity="center"
+                    android:textColor="@color/deep_red"
+                    android:textSize="@dimen/huge_textsize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

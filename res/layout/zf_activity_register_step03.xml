@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/zf_menu_titlebar" />
+    
+    <RelativeLayout 
+        android:paddingTop="15dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/hui">  
+    	
+        <LinearLayout 
+            android:id="@+id/input_username"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:background="@color/white"
+    		android:paddingLeft="10dp">
+    		
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="@dimen/menu_input_height"
+    			android:text="@string/psd"
+    			android:textColor="@color/pcenter_text_01"
+    			android:textSize="@dimen/commonly28"/>
+            
+		    <com.hc.xiaobairent.view.ClearEditText
+		        android:id="@+id/edt_userpsd"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:paddingRight="10dp"
+		        android:layout_height="@dimen/menu_input_height"
+		        android:background="@color/white"
+		        android:gravity="center_vertical"
+		        android:hint="请输入密码"
+		        android:numeric="integer"
+		        android:inputType="phone"
+		        android:paddingLeft="20dp"
+		        android:textSize="@dimen/commonly28" />
+
+	    </LinearLayout>
+		
+        <LinearLayout
+		    android:id="@+id/line"
+		    android:layout_width="match_parent"
+		    android:layout_height="2dp"
+		    android:layout_below="@id/input_username"
+		    android:background="@color/white"
+		    android:orientation="vertical" >
+		    
+		    <View
+			    android:layout_width="match_parent"
+			    android:layout_marginLeft="10dp" 
+			    android:layout_height="1px"
+			    android:background="#ffbfbfbf"/>
+
+		</LinearLayout>
+	    
+	    
+	    <LinearLayout 
+	        android:id="@+id/input_userpsd"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_below="@id/line"
+    		android:background="@color/white"
+    		android:paddingLeft="10dp">
+    		
+    		
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="@dimen/menu_input_height"
+    			android:text="@string/repsd"
+    			android:textColor="@color/pcenter_text_01"
+    			
+    			android:textSize="@dimen/commonly28"/>
+	    
+		    <com.hc.xiaobairent.view.ClearEditText
+		        android:id="@+id/edt_userrepsd"
+		        android:layout_width="match_parent"
+		        android:paddingRight="10dp"
+		        android:layout_height="@dimen/menu_input_height"
+		        android:background="@color/white"
+		        android:gravity="center_vertical"
+		        android:hint="请确认密码"
+		        android:inputType="textPassword"
+		        android:paddingLeft="20dp"
+		        android:textSize="@dimen/commonly28" />
+		 
+		</LinearLayout>
+		
+	    <LinearLayout 
+	        android:id="@+id/aggrement"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/input_userpsd"
+	        android:paddingTop="6dp"
+	        android:paddingLeft="11dp"
+	        android:orientation="horizontal">
+		    
+	        <CheckBox 
+	            android:id="@+id/agree_isum"
+	            android:layout_marginTop="1dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="@style/CustomCheckboxTheme"/>
+	        
+	        <TextView 
+	            android:layout_marginLeft="5dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/gray5"
+	            android:text="我已经阅读并同意用户注册协议"/>
+	        
+	    </LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/login_btu_r"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/aggrement"
+	        android:paddingTop="25dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp">
+	        
+	        <Button
+	            android:id="@+id/next_btu"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:background="@drawable/btn_d"
+		        android:gravity="center"
+		        android:text="确认"
+		        android:clickable="false"
+		        android:textSize="@dimen/pcenter_text_01"
+		        android:textColor="@color/white" />
+	        
+	    </RelativeLayout>	    
+	  
+    </RelativeLayout>
+    
+
+</LinearLayout>

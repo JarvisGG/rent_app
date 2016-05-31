@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_margin"
+        android:background="@color/background_gray" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="王小明"
+        android:textSize="@dimen/medium_textsize" />
+
+    <TextView
+        android:id="@+id/phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="@dimen/small_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="12312311231"
+        android:textSize="@dimen/medium_textsize" />
+
+    <TextView
+        android:id="@+id/house_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/house_name"
+        android:drawablePadding="@dimen/small_margin"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:text="星耀城"
+        android:textSize="@dimen/medium_textsize" />
+
+    <include layout="@layout/line_horizontal" />
+
+</LinearLayout>

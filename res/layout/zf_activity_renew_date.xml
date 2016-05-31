@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/zf_menu_titlebar" />"
+
+    <ScrollView 
+        android:paddingLeft="15dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    	<LinearLayout 
+    	    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical">
+		   <TextView
+		       android:id="@+id/renew_date1"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="1个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   
+		   <TextView
+		       android:id="@+id/renew_date2"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="2个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   
+		   <TextView
+		       android:id="@+id/renew_date3"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="3个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date4"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="4个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date5"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="5个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date6"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="6个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date7"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="7个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date8"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="8个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date9"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="9个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date10"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="10个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date11"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="11个月"
+		       android:textSize="@dimen/commonly_desc24" />
+		   
+		   <include layout="@layout/line_horizontal" />
+		   <TextView
+		       android:id="@+id/renew_date12"
+		       android:layout_width="match_parent"
+		       android:layout_height="50dp"
+		       android:background="@null"
+		       android:gravity="center_vertical|left"
+		       android:singleLine="true"
+		       android:text="12个月"
+		       android:textSize="@dimen/commonly_desc24" />
+	   
+	   </LinearLayout>
+	   </ScrollView>
+	<include layout="@layout/line_horizontal" />
+</LinearLayout>

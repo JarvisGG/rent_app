@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_tab" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/bottom_padding" >
+
+            <ImageView
+                android:id="@+id/iv_tab_1"
+                android:layout_width="@dimen/iv_bottom_width"
+                android:layout_height="@dimen/iv_bottom_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_image_margin_top"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_tab_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_tab_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_text_margin_top"
+                android:text="@string/tab_1"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/tv_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/bottom_padding" >
+
+            <ImageView
+                android:id="@+id/iv_tab_2"
+                android:layout_width="@dimen/iv_bottom_width"
+                android:layout_height="@dimen/iv_bottom_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_image_margin_top"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_tab_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_tab_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_text_margin_top"
+                android:text="@string/tab_2"
+                android:textSize="@dimen/tv_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_3"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/bottom_padding" >
+
+            <ImageView
+                android:id="@+id/iv_tab_3"
+                android:layout_width="@dimen/iv_bottom_width"
+                android:layout_height="@dimen/iv_bottom_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_image_margin_top"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_tab_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_tab_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_text_margin_top"
+                android:text="@string/tab_3"
+                android:textSize="@dimen/tv_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_4"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/bottom_padding" >
+
+            <ImageView
+                android:id="@+id/iv_tab_4"
+                android:layout_width="@dimen/iv_bottom_width"
+                android:layout_height="@dimen/iv_bottom_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_image_margin_top"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_tab_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_tab_4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bottom_text_margin_top"
+                android:text="@string/tab_4"
+                android:textSize="@dimen/tv_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

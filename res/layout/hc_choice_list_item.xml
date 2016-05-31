@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_start_end" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/choice_image_height"
+        android:layout_height="@dimen/choice_image_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_start_end"
+        android:scaleType="fitXY"
+        android:src="@drawable/unselected_vote" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_start_end"
+        android:text="Yes,I do!"
+        android:textSize="@dimen/list_item_text_size" />
+
+</LinearLayout>

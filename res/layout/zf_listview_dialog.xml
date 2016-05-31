@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_dialog"
+    android:gravity="center"
+    
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/commonly28"
+            android:text="删除这条信息"/>
+        
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dip" 
+		    android:background="@color/hui"/>
+
+        <LinearLayout 
+           	android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+            
+            <Button 
+                android:id="@+id/positiveButton"  
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="@dimen/list_item_text_size"
+                android:focusable="true"       
+                android:background="@drawable/zf_listview_left"
+                android:textColor="@color/rose"
+                android:gravity="center"
+                android:text="确定"/>
+            
+            
+            <Button 
+                android:id="@+id/negativeButton" 
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/list_item_text_size"
+                android:focusable="true"
+                android:background="@drawable/zf_listview_right"
+				android:gravity="center"
+                android:text="取消"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

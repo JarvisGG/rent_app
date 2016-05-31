@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin" >
+
+    <include layout="@layout/back_title_date_time" />
+
+    <TextView
+        android:id="@+id/title_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/medium_margin"
+        android:text="通知有新的文件需要审批，通知文件审批通过或被退回"
+        android:textSize="@dimen/large_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/author_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_border"
+            android:gravity="center_vertical"
+            android:text="总裁办采购部"
+            android:textColor="@color/gray5" />
+
+        <TextView
+            android:id="@+id/date_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"
+            android:text="2015-01-12"
+            android:textColor="@color/gray5" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/content_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/medium_margin" />
+
+    <TextView
+        android:id="@+id/title_files_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/medium_margin"
+        android:text="通知有新的文件需要审批，通知文件审批通过或被退回"
+        android:textSize="@dimen/large_textsize" />
+
+    <GridView
+        android:id="@+id/files_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:numColumns="6" />
+
+</LinearLayout>

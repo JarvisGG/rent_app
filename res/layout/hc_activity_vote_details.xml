@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/index_top_layout"
+        layout="@layout/hc_top_bar" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_start_end"
+        android:paddingRight="@dimen/margin_start_end"
+        android:paddingTop="@dimen/margin_top_bottom"
+        android:text="你的兴趣和你的工作有很大关系吗？你喜欢你的工作吗？"
+        android:textSize="14sp" />
+
+    <com.hc.core.view.CountDownTextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_top_bottom"
+        android:paddingLeft="@dimen/margin_start_end"
+        android:paddingRight="@dimen/margin_start_end"
+        android:paddingTop="@dimen/margin_top_bottom"
+        android:text="离投票结束还有：2天15小时20分30秒"
+        android:textSize="12sp" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <include layout="@layout/noscrolllistview" />
+
+    <include layout="@layout/line_horizontal" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_back"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="立即投票"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

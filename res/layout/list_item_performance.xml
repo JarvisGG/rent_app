@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_performance_bg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="序号"
+            android:textColor="@color/gray4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_performance_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="00000001"
+            android:textColor="@color/black"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="日期"
+            android:textColor="@color/gray4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_performance_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2015-12-28"
+            android:textColor="@color/black"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="绩效分数"
+            android:textColor="@color/gray4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_performance_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="8.9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="季度平均分"
+            android:textColor="@color/gray4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_performance_average_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="9.6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="班组内排名"
+            android:textColor="@color/gray4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_performance_ranks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="1"
+            android:textColor="@color/orange2"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

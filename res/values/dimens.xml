@@ -1,0 +1,127 @@
+<resources>
+
+    <!-- 文字大小，四个等级，突出huge，标题large，正文medium，备注等small -->
+    <dimen name="huge_textsize">24sp</dimen>
+    <dimen name="large_textsize">18sp</dimen>
+    <dimen name="medium_textsize">16sp</dimen>
+    <dimen name="small_textsize">12sp</dimen>
+    <dimen name="small_tip_textsize">11sp</dimen>
+    <!-- 空白大小，四个等级，极大huge ，大large，一般medium，较小small -->
+    <dimen name="huge_margin">30dp</dimen>
+    <dimen name="large_margin">15dp</dimen>
+    <dimen name="medium_margin">10dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <!-- 空白大小，四个等级，极大huge ，大large，一般medium，较小small -->
+    <dimen name="huge_height">180dp</dimen>
+    <dimen name="large_height">120dp</dimen>
+    <dimen name="medium_height">80dp</dimen>
+    <dimen name="small1_height">58dp</dimen>
+    <dimen name="small_height">48dp</dimen>
+    <!-- 底部导航 -->
+    <dimen name="iv_bottom_width">30dip</dimen>
+    <dimen name="iv_bottom_height">20dip</dimen>
+    <dimen name="tv_size">15sp</dimen>
+    <!-- 个人中心尺寸 -->
+    <dimen name="pcenter_margin_01">15dp</dimen>
+    <dimen name="pcenter_margin_02">10dp</dimen>
+    <dimen name="pcenter_margin_03">1dp</dimen>
+    <dimen name="pcenter_text_01">17sp</dimen>
+    <!-- 个人中心 -->
+    <dimen name="mine_item_image_logo_width">15dp</dimen>
+    <dimen name="mine_item_image_logo_height">15dp</dimen>
+    <!-- 个人中心文字 -->
+    <dimen name="mine_size">15sp</dimen>
+    <dimen name="margin_start_end">10dp</dimen>
+    <dimen name="margin_top_bottom">10dp</dimen>
+
+    <dimen name="commonly_desc24">14sp</dimen>
+    <!-- 菲儿个人中心 -->
+    <dimen name="person_head_height">180dp</dimen>
+    <dimen name="person_head_height_all">210dp</dimen>
+    <dimen name="person_center_head_height_width">100dp</dimen>
+    <dimen name="person_center_head_margin_top">30dp</dimen>
+    <dimen name="person_center_text_02">16sp</dimen>
+    <dimen name="person_sign_width">80dp</dimen>
+    <dimen name="person_sign_height">30dp</dimen>
+    <dimen name="person_margin_bottom_right">20dp</dimen>
+    <dimen name="person_margin_left_right">7dp</dimen>
+    <dimen name="person_margin_left">10dp</dimen>
+    <!-- 香河 -->
+    <dimen name="person_arrow">12dp</dimen>
+    <dimen name="person_padding">10dp</dimen>
+    <dimen name="person_head_height1">120dp</dimen>
+    <dimen name="person_center_head_height_width1">65dp</dimen>
+    <dimen name="person_center_head_margin_top1">20dp</dimen>
+    <!-- 头部栏 -->
+    <dimen name="top_padding_right">10dp</dimen>
+    <dimen name="top_back_width">40dp</dimen>
+    <dimen name="top_back_padding_bottom_top">13dp</dimen>
+    <dimen name="top_back_padding_Left_right">8dp</dimen>
+    <dimen name="top_height">48dp</dimen>
+    <dimen name="top_message_search_height_width">20dip</dimen>
+    <dimen name="top_shop_car_height_width">25dip</dimen>
+    <dimen name="top_car_num_margin_right">2.5dp</dimen>
+    <dimen name="top_car_num_margin_top">2dp</dimen>
+    <dimen name="top_car_num_size">7sp</dimen>
+    <dimen name="top_menu_width_height">30dip</dimen>
+    <dimen name="top_right_text">16sp</dimen>
+    <dimen name="top_edit_search_height">33dip</dimen>
+    <dimen name="top_edit_margin_left">30dip</dimen>
+    <dimen name="top_edit_margin_right">15dip</dimen>
+    <dimen name="top_edit_padding_left">10dip</dimen>
+    <dimen name="top_left_search_margin_right">-53dp</dimen>
+    <dimen name="top_search_margin_left">-40dp</dimen>
+    <dimen name="top_title_text_size">20sp</dimen>
+    <!-- 边间距 -->
+    <dimen name="border_pad">13dp</dimen>
+    <!-- 边间距 16 -->
+    <dimen name="border_pad16px">9dp</dimen>
+    <!-- 边间距 24 -->
+    <dimen name="border_pad24px">14dp</dimen>
+    <dimen name="commonly_desc_padding34">19dp</dimen>
+    <!-- 投票 -->
+    <dimen name="padding">10dp</dimen>
+    <dimen name="list_item_title_text_size">16sp</dimen>
+    <dimen name="list_item_text_size">12sp</dimen>
+    <dimen name="vote_height">30dp</dimen>
+    <dimen name="choice_image_height">20dp</dimen>
+    <!-- 底部导航 -->
+    <dimen name="bottom_height">50dp</dimen>
+    <dimen name="bottom_padding">4dp</dimen>
+    <dimen name="bottom_image_margin_top">2dp</dimen>
+    <dimen name="bottom_text_margin_top">3dp</dimen>
+
+    <!-- 首页字体 -->
+    <dimen name="index_title">20sp</dimen>
+    <!-- 边框间距 -->
+    <dimen name="space_border">10dp</dimen>
+    <dimen name="commonly28">16sp</dimen>
+    
+    <!-- DropDownList -->
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+    
+    <!-- 自定义Dialog控件 -->
+    <dimen name="dialog_padding">25dp</dimen>
+    
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    
+    <!-- 自定义 -->
+    <dimen name="must_fillin_flag">6dp</dimen>
+    <dimen name="depute_room_item">40dp</dimen>
+    <dimen name="menu_input_height">47dp</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="ui_10_dip">10dip</dimen> 
+
+</resources>

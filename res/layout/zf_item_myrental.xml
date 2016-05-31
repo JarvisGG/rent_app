@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding"
+        android:background="@color/hui" />"
+    
+    <LinearLayout
+        android:paddingTop="@dimen/padding"
+    	android:paddingLeft="@dimen/padding"
+    	android:paddingRight="@dimen/padding"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingBottom="@dimen/padding"
+        android:orientation="horizontal">
+        
+        <ImageView 
+	        android:id="@+id/tv_icon"
+	        android:layout_width="64dp" 
+	        android:layout_height="64dp"
+	        android:layout_marginRight="@dimen/padding"
+	        android:src="@drawable/portrait_2"/>
+        
+      	<RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="64dp">
+	        
+	        <TextView 
+	            android:id="@+id/tv_title" 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:textSize="@dimen/medium_textsize"
+	            android:maxLines="1"
+	            android:text="Title"
+	            android:paddingTop="2dp"
+	            android:layout_alignParentTop="true"  />
+	        
+	        <TextView 
+	            android:id="@+id/tv_content"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textSize="@dimen/small_textsize"
+	            android:textColor="@color/gray5"
+	            android:maxLines="1"
+	            android:text="280m 1.9元/m天"
+	            android:layout_below="@id/tv_title"/>
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:orientation="horizontal">
+	            
+	            <TextView 
+		            android:id="@+id/tv_price"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/medium_textsize" 
+		            android:textColor="@color/rose"
+		            android:maxLines="1"
+		            android:text="3200"/>
+	            
+	            <TextView 
+	                android:id="@+id/tv_type"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/small_textsize" 
+		            android:textColor="@color/gray5"
+		            android:maxLines="1"
+		            android:paddingLeft="@dimen/small_margin"
+		            android:text="元/月（押一付一）"/>
+	            
+	        </LinearLayout>
+	     </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding"
+        android:paddingBottom="@dimen/padding">
+      	
+        <include layout="@layout/line_horizontal" />
+        <LinearLayout 
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:orientation="horizontal">
+            
+            <Button 
+                android:id="@+id/refund_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="@dimen/small_textsize" 
+		        android:textColor="#1fa5e4"
+	            android:background="@drawable/rental_btn1"
+	            android:layout_marginRight="10dp"
+	            android:text="退款" />
+        
+	        <Button 
+	            android:id="@+id/renew_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="@dimen/small_textsize" 
+		        android:textColor="#eb4555"
+	            android:background="@drawable/rental_btn2"
+	            android:text="续租" />
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

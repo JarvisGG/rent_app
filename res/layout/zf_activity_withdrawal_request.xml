@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/zf_menu_titlebar" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/hui"/>
+    
+    <include layout="@layout/line_horizontal" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        
+    	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:gravity="center_vertical"
+	        android:paddingRight="15dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical"
+	            android:text="房源"
+	
+	            android:textSize="@dimen/commonly_desc24" />
+	
+	        <TextView
+	            android:id="@+id/tv_housing_resources"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@null"
+	            android:gravity="center_vertical|right"
+	            android:singleLine="true"
+	            android:textSize="@dimen/commonly_desc24" 
+	            android:text="定都商务楼"/>
+
+        </LinearLayout>
+        <include layout="@layout/line_horizontal" />    
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:gravity="center_vertical"
+	        android:paddingRight="15dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical"
+	            android:text="退房日期"
+	
+	            android:textSize="@dimen/commonly_desc24" />
+	
+	        <TextView
+	            android:id="@+id/tv_checkout_date"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@null"
+	            android:gravity="center_vertical|right"
+	            android:singleLine="true"
+	            android:textSize="@dimen/commonly_desc24" 
+	            android:text="2015-01-15 至 2016-01-15"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+     <include layout="@layout/line_horizontal" />
+     
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp">
+        
+        <TextView 
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:textSize="@dimen/small_tip_textsize"
+            android:textColor="@color/gray4"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/rent_tip" />
+        
+        <Button
+            android:id="@+id/next_btu"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/btn_hl"
+			android:layout_marginTop="20dp"
+	        android:gravity="center"
+	        android:text="提交退租申请"
+	        android:textSize="@dimen/pcenter_text_01"
+	        android:textColor="@color/white" />
+        
+    </LinearLayout>"
+
+</LinearLayout>

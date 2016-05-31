@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/icon_suggestion_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/imagedoc" />
+
+    <TextView
+        android:id="@+id/title_suggestion_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_suggestion_file"
+        android:layout_centerHorizontal="true"
+        android:maxLines="2"
+        android:text="title"
+        android:textSize="@dimen/medium_textsize" />
+
+    <TextView
+        android:id="@+id/size_suggestion_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_suggestion_file"
+        android:layout_centerHorizontal="true"
+        android:maxLines="2"
+        android:text="size"
+        android:textSize="@dimen/small_textsize" />
+
+    <ProgressBar
+        android:id="@+id/progress_download_suggestion_file"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="@dimen/small_height"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/size_suggestion_file"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/download_icon_suggestion_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/icon_suggestion_file"
+        android:layout_alignTop="@id/icon_suggestion_file"
+        android:contentDescription="@null"
+        android:padding="@dimen/small_margin"
+        android:src="@drawable/download" />
+
+</RelativeLayout>

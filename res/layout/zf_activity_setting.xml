@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/zf_menu_titlebar" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/hui"/>
+    <include layout="@layout/line_horizontal" />
+    
+    <LinearLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="vertical"
+	     android:background="@color/white"
+	     android:paddingLeft="20dp" >
+	
+	     <LinearLayout
+	         android:id="@+id/setting_share"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:padding="@dimen/pcenter_margin_01" >
+	
+	         <ImageView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:contentDescription="@null"
+	             android:src="@drawable/icon_1_setting" />
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="@dimen/person_margin_left"
+	             android:layout_weight="1"
+	             android:text="分享"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	     </LinearLayout>
+	     
+	     <include layout="@layout/hc_line_horizontal" />
+	     
+	     <LinearLayout
+	         android:id="@+id/setting_function"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:padding="@dimen/pcenter_margin_01" >
+	
+	         <ImageView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:contentDescription="@null"
+	             android:src="@drawable/icon_2_setting" />
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="@dimen/person_margin_left"
+	             android:layout_weight="1"
+	             android:text="功能与介绍"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	     </LinearLayout>
+	     
+	     <include layout="@layout/hc_line_horizontal" />
+	     
+	     <LinearLayout
+	         android:id="@+id/setting_help"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:padding="@dimen/pcenter_margin_01" >
+	
+	         <ImageView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:contentDescription="@null"
+	             android:src="@drawable/icon_3_setting" />
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="@dimen/person_margin_left"
+	             android:layout_weight="1"
+	             android:text="帮助与反馈"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	     </LinearLayout>
+	     
+	     <include layout="@layout/hc_line_horizontal" />
+	     
+	     <LinearLayout
+	         android:id="@+id/setting_contact"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:padding="@dimen/pcenter_margin_01" >
+	
+	         <ImageView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:contentDescription="@null"
+	             android:src="@drawable/icon_4_setting" />
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="@dimen/person_margin_left"
+	             android:layout_weight="1"
+	             android:text="联系我们"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	     </LinearLayout>
+	     
+	     <include layout="@layout/hc_line_horizontal" />
+	     
+	     <LinearLayout
+	         android:id="@+id/setting_updata"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal"
+	         android:padding="@dimen/pcenter_margin_01" >
+	
+	         <ImageView
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:contentDescription="@null"
+	             android:src="@drawable/icon_5_setting" />
+	
+	         <TextView
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="@dimen/person_margin_left"
+	             android:layout_weight="1"
+	             android:text="版本更新"
+	             android:textColor="@color/pcenter_text_01"
+	             android:textSize="@dimen/pcenter_text_01" />
+	     </LinearLayout>
+    
+	</LinearLayout>
+	<include layout="@layout/hc_line_horizontal" />
+	
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        
+        <Button
+            android:id="@+id/next_btu"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/btn_hl"
+	        android:gravity="center"
+	        android:text="退出登录"
+	        android:clickable="false"
+	        android:textSize="@dimen/pcenter_text_01"
+	        android:textColor="@color/white" />
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>
